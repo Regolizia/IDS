@@ -100,7 +100,7 @@
 
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 text-center padding0">
-                <img src="/img/K2.png" class="homeImgs" alt="Kid doing yoga"">
+                <img src="/img/K2.png" class="homeImgs" alt="Kid doing yoga">
                 <h3 class="bolder ourFont morespace3b">Yoga<br>Exercises</h3>
 <!--                <p>Product/Communication Designer</p>-->
             </div><!-- /.col-lg-4 -->
@@ -130,8 +130,8 @@
                     <div class="device mySlides">
                         <div class="device-base tag">
                         </div>
-                        <div class="device-frame appimg1 tag" alt="Homepage">
-                            <img class="screenshotContainer" src="/img/app1b.png" alt="Login">
+                        <div class="device-frame appimg1 tag visible" alt="Homepage">
+                            <img class="screenshotContainer screenshot" src="/img/app1b.png" alt="Login">
                         </div>
 <!--                        <p>-->
 <!--                            Simplicity is the keyword: the whole application has been designed to be kid-friendly.-->
@@ -140,8 +140,8 @@
                     <div class="device mySlides">
                         <div class="device-base tag">
                         </div>
-                        <div class="device-frame appimg2 tag" alt="Yoga">
-                            <img class="screenshotContainer" src="/img/app2b.png" alt="Specify type of yoga">
+                        <div class="device-frame appimg2 tag visible" alt="Yoga">
+                            <img class="screenshotContainer screenshot" src="/img/app2b.png" alt="Specify type of yoga">
                         </div>
 <!--                        <p>-->
 <!--                            The first activity involves interactive yoga lessons. Your child will be guided by Matty’s application to do some yoga poses, receiving feedback to improve balance.-->
@@ -151,8 +151,8 @@
                     <div class="device mySlides">
                         <div class="device-base tag">
                         </div>
-                        <div class="device-frame appimg3 tag" alt="Meditation">
-                            <img class="screenshotContainer" src="/img/app3b.png" alt="Specify type of meditation">
+                        <div class="device-frame appimg3 tag visible" alt="Meditation">
+                            <img class="screenshotContainer screenshot" src="/img/app3b.png" alt="Specify type of meditation">
                         </div>
 <!--                        <p>-->
 <!--                            In the second activity your child will learn relaxation techniques thanks to some guided meditations. In this way, the child’s stress level will lower.-->
@@ -161,8 +161,8 @@
                     <div class="device mySlides">
                         <div class="device-base tag">
                         </div>
-                        <div class="device-frame appimg4 tag" alt="Stories">
-                            <img class="screenshotContainer" src="/img/app4b.png" alt="Specify type of meditation">
+                        <div class="device-frame appimg4 tag visible" alt="Stories">
+                            <img class="screenshotContainer screenshot" src="/img/app4b.png" alt="Specify type of meditation">
                         </div>
 <!--                        <p>-->
 <!--                            The third activity regards interactive stories. Your child will be entertained by a story during which she or he will be asked to make some decisions.-->
@@ -237,33 +237,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-</script>
-
-<script>
-    $(document).on("scroll", function() {
-        var pageTop = $(document).scrollTop();
-        var pageBottom = pageTop + $(window).height();
-        // console.log("top: "+pageTop);
-        // console.log("bottom: "+pageBottom);
-
-        var tags = $(".tag");
-
-        for (var i = 0; i < tags.length; i++) {
-            var tag = tags[i];
-
-            // console.log("POSITION: "+$(tag).offset().top);
-            var top = $(tag).offset().top;
-
-            // console.log("POSITION2: "+ top);
-            if (top < pageBottom) {
-                $(tag).addClass("visible");
-                $(tag).children().addClass("screenshot");
-            } else {
-                $(tag).removeClass("visible");
-                $(tag).children().removeClass("screenshot");
-            }
-        }
-    });
 </script>
 
 <script>
